@@ -1,0 +1,49 @@
+/*
+* @Author: jack
+* @Date:   2016-04-06 16:27:14
+* @Last Modified by:   jack
+* @Last Modified time: 2016-04-13 16:47:55
+*/
+
+@import 'common/mixin';
+
+@include m-logo;
+@include m-detail_btn;
+@include m-detail_dialog;
+@include m-list_box;
+@include m-item_dialog;
+@include m-upload;
+@include m-download_dialog;
+@include m-record_dialog;
+@include m-share_overlay;
+
+.g-index {
+  background: url('bg/banner_bg.png') no-repeat;
+  background-size: 100% auto;
+
+  .g-above {
+    height: rem(640);
+  }
+
+  .m-logo {
+    margin-left: rem(20);
+    margin-top: rem(20);
+  }
+
+  .m-detail_btn {
+    float: right;
+    text-decoration: underline;
+    margin-right: rem(20);
+    margin-top: rem(30);
+  }
+
+  .m-list_box {
+    .cnt {
+      padding-bottom: rem(30);
+    }
+  }
+
+  // .m-list_box {
+  //   padding-top: rem(610);
+  // }
+}

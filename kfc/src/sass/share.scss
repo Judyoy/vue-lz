@@ -1,0 +1,48 @@
+/*
+* @Author: jack
+* @Date:   2016-04-12 17:36:17
+* @Last Modified by:   jack
+* @Last Modified time: 2016-04-14 10:11:33
+*/
+
+@import 'common/mixin';
+
+@include m-logo;
+@include m-list_box;
+@include m-item_dialog;
+@include m-download_dialog;
+@include m-record_dialog;
+@include m-share_overlay;
+@include m-item_card;
+
+.g-share {
+  background: url('bg/share_bg.png') no-repeat;
+  background-size: 100% auto;
+
+  .m-logo {
+    margin-left: rem(20);
+    margin-top: rem(20);
+  }
+
+  .m-item_card {
+    margin-top: rem(240);
+  }
+
+  .m-list_box {
+    .hd {
+      text-align: center;
+
+      .ttl {
+        height: rem(41);
+      }
+    }
+
+    .item_wrap {
+      display: none;
+
+      &.z-crt {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+/*
+* @Author: jack
+* @Date:   2016-04-06 16:27:14
+* @Last Modified by:   jack
+* @Last Modified time: 2016-04-13 19:05:39
+*/
+
+@import 'normalize';
+@import 'animate';
+@import 'mixin';
+
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari */
+}
+
+body {
+  background-color: #fec54b;
+  font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.g-mobile {
+  width: 640px;
+  margin: auto;
+}
+
+@include m-mark;
+@include m-loading;
+
+@keyframes voicePlaying
+{
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: rem(-160) 0;
+  }
+}
+
+@-webkit-keyframes voicePlaying /* Safari 和 Chrome */
+{
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: rem(-160) 0;
+  }
+}
